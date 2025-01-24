@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+	<title>exercise 2 ; operators</title>
+
+	<!-- JS --> 
+</head>
+<body>
+	<div class="container mt-t mt-5">
+		<h1 id="sample">area and circumference of a circle</h1>
+		<img src="circle.png">
+
+		<h5>radius: 5in</h5>
+		<h4 id="AC">click the buttons below to find the<br>area and circumference of the circle.</h4>
+		<br>
+		<!-- area -->
+		<button type="button" class="btn btn-dark" onclick="
+		const pi=3.14;	 
+		var rad= 5; 
+		var area = pi*(rad**2);
+		document.getElementById('AC').innerHTML = 'the area of the circle is ' + area + '.'
+		">area</button>
+
+		<!-- circumference -->
+		<button type="button" class="btn btn-dark" onclick="
+		const pi=3.14;
+		var rad= 5;
+		var circumference = 2*pi*rad;
+		document.getElementById('AC').innerHTML = 'the circumference of the circle is ' + circumference +'.'
+		">circumference</button>
+
+
+		<button type="button" class="btn btn-dark" onClick="window.location.reload()">refresh</button>
+
+		<!-- JS -->
+	</div>
+</body>
+</html>
+
